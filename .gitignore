@@ -1,0 +1,9 @@
+.DS_Store
+.monitor
+.nodester.appconfig
+config.js
+node_modules/
+static/css/*.css
+static/css/*.css.*.gz
+static/js/*.js.*.gz
+!.gitignore

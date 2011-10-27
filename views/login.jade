@@ -1,0 +1,20 @@
+#login
+  form(method="post")
+    p.field
+      label(for="username", autofocus) username
+      input(type="text", name="username")
+
+    p.field
+      label(for="password") password
+      input(type="password", name="password")
+
+    p.register
+      input(type="checkbox", name="register")
+      label(for="register") register account
+
+    input.button(type="submit", value="login")
+
+  #external
+    p login via
+    a.twitter(href="/login/twitter") twitter
+    a.github(href="/login/github") github

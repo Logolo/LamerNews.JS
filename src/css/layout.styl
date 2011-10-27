@@ -1,0 +1,145 @@
+html
+  height 100%
+
+html, body
+  padding 0
+  margin 0
+  overflow auto
+
+body
+  min-height 100%
+  position relative
+  font 12px "Lucida Grande", Helvetica, Arial, sans-serif
+  color #444
+
+.georgia
+  font-family georgia
+
+a
+  text-decoration none
+  &, &:visited
+    color #2547F4
+
+header
+  position fixed
+  top 0
+  left 0
+  right 0
+  padding 5px 20px
+  background-color #444
+  border-bottom 1px #000 solid
+  height 28px
+  overflow hidden
+  box-shadow 0px 10px 15px #fff
+  
+  a
+    color #ddd
+    &:visited
+      color #ddd
+    &:hover
+      color #fff
+  
+  h1, nav
+    display inline-block
+    padding 0
+    float left
+    margin 0
+    vertical-align bottom
+  
+  h1
+    font-size 1.2em
+    margin-right 30px
+    font-weight normal
+    a
+      font-size 1.6em
+      margin-right 10px
+
+    small
+      font-size 0.6em
+      color #aaa
+
+  nav 
+    margin-top 10px
+
+  nav:first-of-type
+    a
+      margin-right 10px
+    a:hover  
+      text-shadow 0 0 4px #dd9
+    a:after
+      content "|"
+      margin-left 10px
+      color #666
+      text-shadow none !important
+    a:last-of-type:after
+      content ''
+      margin 0
+
+  nav#account
+    float right
+    a
+      img
+        border 1px solid #888
+        vertical-align top
+        width 26px
+        height 26px
+        margin-right 15px
+        margin-top -8px
+    
+    small.karma
+      margin 0 20px 0 4px
+      font-size 1em
+      &, &:before, &:after
+        color #aaa
+      &:before
+        content '('
+      &:after
+        content ')'
+
+
+
+
+
+
+
+
+#main
+  padding 10px 20px
+  margin-top 40px
+
+  a
+    color #222
+    &:visited
+      color #999
+
+
+
+
+
+
+
+
+footer
+  font-size 0.9em
+  margin 4px auto
+  padding 4px 10px
+  border 1px #ddd solid
+  background-color #F9F9F9
+  //box-shadow 0 2px 6px rgba(100,100,100,0.2)
+  color #888
+  position absolute
+  bottom 0
+  right 0
+  left 0
+
+  .source
+    float right
+  .links
+    float left
+
+  a:after
+    content '\2022'
+    padding 0 6px
+    color #888
+  a:last-of-type:after
+    content ''

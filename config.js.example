@@ -1,0 +1,25 @@
+var config = exports;
+config.sessions = {
+  secret: "<random string>",
+  key: "<session cookie name>",
+  expires: 86400000
+};
+
+config.admins = [<comma separated list of admins>];
+
+config.twitter = {
+  consumerKey: "",
+  consumerSecret: ""
+};
+
+config.github = {
+  appId: "",
+  appSecret: "",
+  scope: "user"
+};
+
+config.redis = {
+  host: "127.0.0.1",
+  port: 6379,
+  userHashTable: "users"
+};

@@ -1,0 +1,21 @@
+header
+  h1
+    a(href="/") Lamer News
+    a(href="/about/changelog")
+      small.georgia #{app.version}
+
+  nav
+    a(href="/") Top
+    a(href="/latest") Latest
+    a(href="/feed") RSS
+    a(href="/submit") Submit
+
+  nav#account
+    - if (user.name)
+      a(href="/user/#{user.id}")
+        img(src="#{user.thumbnail}")
+        span.user #{user.name}
+        small.karma #{user.karma}
+      a(href="/logout") Logout
+    - else
+      a(href="/login") Login / Signup
