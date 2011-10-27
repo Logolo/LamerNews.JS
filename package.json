@@ -1,7 +1,10 @@
 {
     "name": "Lamer News - JS edition"
   , "version": "0.0.3"
+  , "source": "https://github.com/netroy/LamerNews.JS"
+  , "author": "Aditya (https://github.com/netroy)"
   , "private": true
+  , "engine": "node >= 0.4.11"
   , "dependencies": {
       "express": "2.4.3"
     , "stylus": ">= 0.0.1"
